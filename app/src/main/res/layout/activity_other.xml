@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/others_bg"
+    tools:context=".other">
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Help Button (top-right corner) -->
+    <ImageButton
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="help"
+        android:src="@android:drawable/ic_menu_help" />
+
+    <!-- About Us Button -->
+    <Button
+        android:id="@+id/buttonAboutUs"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="200dp"
+        android:text="@string/other_about_us" />
+
+
+
+    <!-- Help Button -->
+    <Button
+        android:id="@+id/buttonHelpPage"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/buttonAboutUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:text="@string/other_help" />
+</RelativeLayout>
